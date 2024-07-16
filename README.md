@@ -2,4 +2,4 @@
 
 A new Flutter project.
 
-![Pantalla principal](app_screenshots/screenshot_home.jpg)
+![Pantalla principal](flutter_app_cinemapedia_demo_udemy/app_screenshots/screenshot_home.jpg)
