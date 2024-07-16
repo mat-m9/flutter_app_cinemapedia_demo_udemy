@@ -1,7 +1,7 @@
 # flutter_app_cinemapedia_demo_udemy
 
 Aplicación demostrativa Cinemapedia desarrollada en el curso de Udemy "Flutter - Móvil: de Cero a Experto"
-La aplicación se conecta a la api de "TheMovieDb.org" y permite buscar peliculas, estrenos, por categoría y añadir a lista de favoritos. 
+La aplicación está desarrollada siguiendo los principios de arquitectura limpia, utiliza una intefaz intuitiva y se conecta a la api de "TheMovieDb.org" y permite buscar peliculas, estrenos, por categoría y añadir a lista de favoritos. 
 
 Algunas capturas de pantalla del funcionamiento de la app:
 
