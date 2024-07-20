@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_cinemapedia_demo_udemy/domain/entities/movie.dart';
-import 'package:flutter_app_cinemapedia_demo_udemy/presentation/delegates/search_movie_delegate.dart';
-import 'package:flutter_app_cinemapedia_demo_udemy/presentation/providers/search/search_movies_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'package:flutter_app_cinemapedia_demo_udemy/domain/entities/movie.dart';
+
+import 'package:flutter_app_cinemapedia_demo_udemy/presentation/delegates/search_movie_delegate.dart';
+import 'package:flutter_app_cinemapedia_demo_udemy/presentation/providers/providers.dart';
 
 class CustomAppbar extends ConsumerWidget {
   const CustomAppbar({super.key});
@@ -22,11 +23,10 @@ class CustomAppbar extends ConsumerWidget {
         child: SizedBox(
           width: double.infinity,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Icon( Icons.movie_outlined, color: colors.primary ),
               const SizedBox( width: 5 ),
-              Text('Cinemapedia', style: titleStyle),
+              Text('Cinemapedia', style: titleStyle ),
       
               const Spacer(),
       

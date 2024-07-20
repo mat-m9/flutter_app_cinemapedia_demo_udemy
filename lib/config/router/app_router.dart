@@ -1,6 +1,6 @@
-import 'package:flutter_app_cinemapedia_demo_udemy/presentation/screens/movies/home_screen.dart';
-import 'package:flutter_app_cinemapedia_demo_udemy/presentation/screens/movies/movie_screen.dart';
 import 'package:go_router/go_router.dart';
+
+import 'package:flutter_app_cinemapedia_demo_udemy/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/home/0',
@@ -10,8 +10,7 @@ final appRouter = GoRouter(
       path: '/home/:page',
       name: HomeScreen.name,
       builder: (context, state) {
-        
-        final pageIndex = int.parse( state.pathParameters['page'] ?? '0' );
+        final pageIndex = int.parse( state.params['page'] ?? '0' );
 
         return HomeScreen( pageIndex: pageIndex );
       },
@@ -20,7 +19,7 @@ final appRouter = GoRouter(
           path: 'movie/:id',
           name: MovieScreen.name,
           builder: (context, state) {
-            final movieId = state.pathParameters['id'] ?? 'no-id';
+            final movieId = state.params['id'] ?? 'no-id';
 
             return MovieScreen( movieId: movieId );
           },

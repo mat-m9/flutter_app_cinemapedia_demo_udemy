@@ -1,7 +1,9 @@
-import 'package:flutter_app_cinemapedia_demo_udemy/domain/entities/movie.dart';
 import 'package:flutter_app_cinemapedia_demo_udemy/domain/repositories/local_storage_repository.dart';
-import 'package:flutter_app_cinemapedia_demo_udemy/presentation/providers/storage/local_storage_provider.dart';
+import 'package:flutter_app_cinemapedia_demo_udemy/presentation/providers/providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_app_cinemapedia_demo_udemy/domain/entities/movie.dart';
+
+
 
 final favoriteMoviesProvider = StateNotifierProvider<StorageMoviesNotifier,Map<int,Movie>>((ref) {
   final localStorageRepository = ref.watch( localStorageRepositoryProvider );

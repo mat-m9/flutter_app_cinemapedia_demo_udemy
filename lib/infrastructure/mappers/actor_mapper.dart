@@ -1,5 +1,3 @@
-
-
 import 'package:flutter_app_cinemapedia_demo_udemy/domain/entities/actor.dart';
 import 'package:flutter_app_cinemapedia_demo_udemy/infrastructure/models/moviedb/credits_response.dart';
 

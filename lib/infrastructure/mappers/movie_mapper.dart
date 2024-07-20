@@ -1,5 +1,3 @@
-
-
 import 'package:flutter_app_cinemapedia_demo_udemy/domain/entities/movie.dart';
 import 'package:flutter_app_cinemapedia_demo_udemy/infrastructure/models/moviedb/movie_details.dart';
 import 'package:flutter_app_cinemapedia_demo_udemy/infrastructure/models/moviedb/movie_moviedb.dart';

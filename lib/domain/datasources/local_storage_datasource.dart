@@ -1,5 +1,7 @@
 import 'package:flutter_app_cinemapedia_demo_udemy/domain/entities/movie.dart';
 
+
+
 abstract class LocalStorageDatasource {
 
   Future<void> toggleFavorite( Movie movie );
